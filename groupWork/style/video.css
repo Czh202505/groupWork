@@ -1,0 +1,54 @@
+﻿.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-section {
+    margin-bottom: 30px;
+}
+
+
+.action-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.action-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.highlight {
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.note {
+    padding: 10px;
+    border-left: 3px solid #2E8B57;
+    margin: 15px 0;
+}
+
+.warning {
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.steps {
+    background-color: #F5F5F5;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+    .steps ol {
+        padding-left: 20px;
+    }
+
+    .steps li {
+        margin-bottom: 10px;
+    }

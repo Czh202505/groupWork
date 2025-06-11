@@ -1,0 +1,128 @@
+﻿/*homePage*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑';
+}
+
+body {
+    background-color: #f0f4f3;
+}
+
+/* 顶部导航 */
+.navbar {
+    background: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #2a5d42;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin-left: 2rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+        color: #2a5d42;
+}
+
+/* 首页 */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5));
+    background-size: cover;
+    height: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
+
+.cta-button {
+    background: #2a5d42;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+    }
+
+/* 功能卡片区 */
+.features {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+    .feature-card img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+/* 进度展示 */
+.progress-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.progress-ring {
+    width: 150px;
+    height: 150px;
+    margin: 2rem auto;
+    border-radius: 50%;
+    background: conic-gradient(#9ee55b 65%, #eee 65% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* 底部 */
+footer {
+    background: #2a5d42;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.shadow_a {
+    text-shadow: 1px 1px 1px black, -1px 1px 1px black, 1px -1px 1px black, -1px -1px 1px black;
+}
