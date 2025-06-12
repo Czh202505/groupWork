@@ -26,7 +26,7 @@
             <h1 style="text-align: center">杨氏24式太极拳课程体系</h1>
         </div>
         <div style="text-align: center">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="500px" CssClass="course-list" DataKeyNames="ID" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Font-Size="X-Large" Font-Bold="True">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="700px" CssClass="course-list" DataKeyNames="ID" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Font-Size="X-Large" Font-Bold="True" RowStyle-CssClass="course-item">
                 <Columns>
                     <asp:BoundField DataField="name" SortExpression="name" ItemStyle-CssClass="course-title" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify" HeaderText="name" ItemStyle-Height="50px">
                     <ItemStyle CssClass="course-title" HorizontalAlign="Justify" VerticalAlign="Middle" />

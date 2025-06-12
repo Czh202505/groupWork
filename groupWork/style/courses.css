@@ -6,16 +6,17 @@
     padding: 0 1rem;
 }
 
-.course-item {
+.course-item {    
+    color: #2a5d42;
+    margin-bottom: 0.5rem;
+    flex: 1;
+
 }
 
 .course-info {
 }
 
 .course-title {
-    color: #2a5d42;
-    margin-bottom: 0.5rem;
-    flex: 1;
     background: white;
     margin-bottom: 1rem;
     padding: 1rem;
