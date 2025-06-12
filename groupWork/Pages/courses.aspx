@@ -26,15 +26,15 @@
             <h1 style="text-align: center">杨氏24式太极拳课程体系</h1>
         </div>
         <div style="text-align: center">
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="800px" CssClass="course-list" DataKeyNames="ID" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="500px" CssClass="course-list" DataKeyNames="ID" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Font-Size="X-Large" Font-Bold="True">
                 <Columns>
-                    <asp:BoundField DataField="name" SortExpression="name" ItemStyle-CssClass="course-title" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify" HeaderText="name" >
+                    <asp:BoundField DataField="name" SortExpression="name" ItemStyle-CssClass="course-title" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify" HeaderText="name" ItemStyle-Height="50px">
                     <ItemStyle CssClass="course-title" HorizontalAlign="Justify" VerticalAlign="Middle" />
                     </asp:BoundField>
                     <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" Visible="False" />
                     <asp:TemplateField ShowHeader="False">
                         <ItemTemplate>
-                            <asp:Button ID="Button1" runat="server" CausesValidation="false" CommandName="Cancel" OnClick="Button1_Click" Text="开始学习" />
+                            <asp:Button ID="Button1" runat="server" CausesValidation="false" CommandName="Cancel" OnClick="Button1_Click" Text="开始学习" CssClass="btn-primary" />
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>
