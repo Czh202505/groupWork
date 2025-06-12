@@ -42,7 +42,7 @@
             <div class="feature-card">
                 <img src="../picture/进度icon.svg" alt="学习进度"/>
                 <h3>智能学习追踪</h3>
-                <p>实时记录练习进度，个性化学习建议</p>
+                <p>实时记录，给出个性化学习建议</p>
             </div>
             <div class="feature-card">
                 <img src="../picture/社区.svg" alt="社区互动"/>
@@ -53,13 +53,13 @@
     </section>
 
     <!-- 学习进度 -->
-    <section class="progress-section">
+<%--    <section class="progress-section">
         <h2>您的太极精进之路</h2>
         <div class="progress-ring" style="color: #000000">65%</div>
         <p>已掌握15/24个标准动作</p>
         <br /><br />
         <a href="courses.aspx" class="cta-button">继续学习</a>
-    </section>
+    </section>--%>
 
     <!-- 页脚 -->
     <footer>
