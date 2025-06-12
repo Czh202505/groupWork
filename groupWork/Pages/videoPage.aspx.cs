@@ -14,16 +14,16 @@ public partial class homePage : System.Web.UI.Page
         if (!IsPostBack)
         {
             string mystr;
-            mystr = Request.Cookies["mycookie"].Value;
+            mystr = Request.Cookies["mycookie"].Value;  //读取cookie中的ID值
             SqlConnection conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["videosConnectionString"].ToString());
             conn.Open();
             SqlCommand cmd = new SqlCommand("select name,path from videoDisplay where ID=@ID",conn);
-            cmd.Parameters.AddWithValue("@ID", mystr);
-            SqlDataReader reader=cmd.ExecuteReader();
-            while (reader.Read())
+            cmd.Parameters.AddWithValue("@ID", mystr);  
+            SqlDataReader reader=cmd.ExecuteReader();   //获取查询结果
+            while (reader.Read())   //读取数据
             {
-                Label1.Text = reader["name"].ToString();
-                video1.Src = reader["path"].ToString();
+                Label1.Text = reader["name"].ToString();    //设置视频名称
+                video1.Src = reader["path"].ToString(); //设置视频路径
             }
             conn.Close();
         }
