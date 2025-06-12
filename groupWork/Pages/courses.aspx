@@ -25,14 +25,41 @@
         <div class="course-container">
             <h1 style="text-align: center">杨氏24式太极拳课程体系</h1>
         </div>
+        <div style="text-align: center">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="800px" CssClass="course-list" DataKeyNames="ID" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <Columns>
+                    <asp:BoundField DataField="name" SortExpression="name" ItemStyle-CssClass="course-title" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify" HeaderText="name" >
+                    <ItemStyle CssClass="course-title" HorizontalAlign="Justify" VerticalAlign="Middle" />
+                    </asp:BoundField>
+                    <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" Visible="False" />
+                    <asp:TemplateField ShowHeader="False">
+                        <ItemTemplate>
+                            <asp:Button ID="Button1" runat="server" CausesValidation="false" CommandName="Cancel" OnClick="Button1_Click" Text="开始学习" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+            </asp:GridView>
+</div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:videosConnectionString %>" SelectCommand="SELECT [name], [ID] FROM [videoDisplay]" DeleteCommand="DELETE FROM [videoDisplay] WHERE [ID] = @ID" InsertCommand="INSERT INTO [videoDisplay] ([name], [ID]) VALUES (@name, @ID)" UpdateCommand="UPDATE [videoDisplay] SET [name] = @name WHERE [ID] = @ID">
+            <DeleteParameters>
+                <asp:Parameter Name="ID" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="name" Type="String" />
+                <asp:Parameter Name="ID" Type="Int32" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="name" Type="String" />
+                <asp:Parameter Name="ID" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+       
         <div class="course-list">
+
             <!-- 课程项示例 -->
-            <div class="course-item">
+<%--            <div class="course-item">
                 <div class="course-info">
                     <h3 class="course-title">第一式：起势</h3>
-                    <div class="progress-line">
-                        <div class="progress-fill"></div>
-                    </div>
                 </div>
                 <div class="action-buttons">
                     <asp:Button ID="Button1" runat="server" Text="开始学习" CssClass="btn-primary"
@@ -41,21 +68,20 @@
                 </div>
 
             </div>
-
+--%>
             <!-- 更多课程项 -->
-            <div class="course-item">
+<%--            <div class="course-item">
                 <div class="course-info">
                     <h3 class="course-title">第二式：左右野马分鬃</h3>
-                    <div class="progress-line">
-                        <div class="progress-fill" style="width: 30%"></div>
-                    </div>
                 </div>
                 <div class="action-buttons">
                     <asp:Button ID="Button2" runat="server" Text="开始学习" CssClass="btn-primary"
                         OnClick="Button2_Click" />
                     <button class="btn btn-secondary">离线</button>
                 </div>
-            </div>
+
+            </div>--%>
+
         </div>
     </form>
 </body>

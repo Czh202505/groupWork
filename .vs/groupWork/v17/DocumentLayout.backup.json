@@ -1,7 +1,16 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitHub\\source\\groupWork\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D07DA86C-E23A-63F2-998B-C31A94FD9C49}|D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork|d:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupwork\\groupwork\\pages\\courses.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D07DA86C-E23A-63F2-998B-C31A94FD9C49}|D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork|solutionrelative:groupwork\\pages\\courses.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07DA86C-E23A-63F2-998B-C31A94FD9C49}|D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork|d:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupwork\\groupwork\\pages\\page1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D07DA86C-E23A-63F2-998B-C31A94FD9C49}|D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork|solutionrelative:groupwork\\pages\\page1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "courses.aspx",
+              "DocumentMoniker": "D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork\\Pages\\courses.aspx",
+              "RelativeDocumentMoniker": "groupWork\\Pages\\courses.aspx",
+              "ToolTip": "D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork\\Pages\\courses.aspx",
+              "RelativeToolTip": "groupWork\\Pages\\courses.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-12T01:25:02.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Page1.aspx",
+              "DocumentMoniker": "D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork\\Pages\\Page1.aspx",
+              "RelativeDocumentMoniker": "groupWork\\Pages\\Page1.aspx",
+              "ToolTip": "D:\\\u5B66\u4E60\\\u5927\u4E8C\u4E0B\\\u4E92\u8054\u7F51\u5E94\u7528\u7A0B\u5E8F\u8BBE\u8BA1\\groupWork\\groupWork\\Pages\\Page1.aspx",
+              "RelativeToolTip": "groupWork\\Pages\\Page1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-06-12T01:25:23.353Z",
+              "EditorCaption": ""
             }
           ]
         }

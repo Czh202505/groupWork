@@ -12,14 +12,20 @@ public partial class courses : System.Web.UI.Page
 
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
-        Response.Redirect("Page1.aspx");
+
     }
 
-    protected void Button2_Click(object sender, EventArgs e)
+    protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Page2.aspx");
+        int row = ((GridViewRow)((Button)sender).NamingContainer).RowIndex;
+        int id = (int)GridView1.DataKeys[row].Value;
+        HttpCookie cookie1 = new HttpCookie("mycookie");
+        cookie1.Value = id.ToString();
+        cookie1.Expires=DateTime.Now.AddMinutes(1);
+        Response.Cookies.Add(cookie1);        
+        Response.Redirect("videoPage.aspx");
 
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Page1.aspx.cs" Inherits="homePage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="videoPage.aspx.cs" Inherits="homePage" %>
 
 <!DOCTYPE html>
 
@@ -39,15 +39,14 @@
     <div class="container">
         <!-- 主页视频模块 -->
         <section class="video-section">
-            <h2>第一式：起势</h2>
-            <video controls="controls" style="width: 100%">
-                <source src="../video/1_起势_体育健康课程-太极功夫_中国大学MOOC(慕课).mp4" type="video/mp4" />
-                您的浏览器不支持视频播放
+            <h2>
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h2>
+            <video controls="controls" runat="server" style="width: 100%" id="video1">
             </video>
         </section>
 
         <!-- 动作拆解列表 -->
-        <section>
+<%--        <section>
             <h2>动作分解学习</h2>
             <div class="action-list">
                 <div class="action-card">
@@ -135,7 +134,8 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>--%>
+
     </div>
 </body>
 </html>

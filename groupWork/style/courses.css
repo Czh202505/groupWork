@@ -7,6 +7,15 @@
 }
 
 .course-item {
+}
+
+.course-info {
+}
+
+.course-title {
+    color: #2a5d42;
+    margin-bottom: 0.5rem;
+    flex: 1;
     background: white;
     margin-bottom: 1rem;
     padding: 1rem;
@@ -15,15 +24,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.course-info {
-    flex: 1;
-}
-
-.course-title {
-    color: #2a5d42;
-    margin-bottom: 0.5rem;
 }
 
 .progress-line {
