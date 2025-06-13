@@ -23,7 +23,7 @@ public partial class courses : System.Web.UI.Page
         int id = (int)GridView1.DataKeys[row].Value;    //获取主键值ID
         HttpCookie cookie1 = new HttpCookie("mycookie");    //使用cookie传递获取到的ID值
         cookie1.Value = id.ToString();
-        cookie1.Expires=DateTime.Now.AddMinutes(1);
+        cookie1.Expires=DateTime.Now.AddMinutes(2);
         Response.Cookies.Add(cookie1);        
         Response.Redirect("videoPage.aspx");    //跳转到视频页面
 

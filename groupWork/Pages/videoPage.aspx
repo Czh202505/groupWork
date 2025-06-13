@@ -38,10 +38,10 @@
 
     <div class="container">
         <!-- 主页视频模块 -->
-        <section class="video-section">
-            <h2>
+        <section class="video-section" style="text-align: center">
+            <h2 style="text-align: justify">
                 <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h2>
-            <video controls="controls" runat="server" style="width: 100%" id="video1">
+            <video controls="controls" runat="server" style="width: 90%" id="video1">
             </video>
         </section>
 
