@@ -11,17 +11,17 @@ public partial class Pages_MasterPage : System.Web.UI.MasterPage
     {
         if (!IsPostBack)
         {
-            if (Session["login"] == null)
+            if (Session["login"] == null)   //检查登录状态
             {
                 return; // 如果没有session，直接返回
             }
             else if (Session["login"].ToString() == "true")
             {
-                // 用户已登录，显示欢迎信息
+                // 用户已登录，显示信息
                 username.Visible = true;
                 username.Text = Request.Cookies["mycookie2"]["username"];
                 Label1.Visible = false;
-                logOutBt.Visible = true; // 显示退出按钮
+                logOutBt.Visible = true; // 显示退出登录按钮
                 logOutBt.Text = "退出登录";
             }
         }

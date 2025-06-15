@@ -16,6 +16,7 @@ public partial class Pages_login : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
+        // 检查用户名和密码是否为空
         if (username.Text!=""&&password1.Text!=""&&password2.Text!="" && password1.Text == password2.Text)
         {
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["videosConnectionString"].ConnectionString))
@@ -27,6 +28,7 @@ public partial class Pages_login : System.Web.UI.Page
                 {
                     cmd.Parameters.AddWithValue("@username", username.Text.Trim());
                     cmd.Parameters.AddWithValue("@password", password1.Text.Trim());
+                    // 执行查询并检查用户名是否已存在
                     if (Convert.ToInt32(cmd.ExecuteScalar())>0)
                     {
                         Response.Write("<script>alert('用户名已存在')</script>");

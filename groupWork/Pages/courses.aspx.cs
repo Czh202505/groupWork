@@ -9,8 +9,8 @@ public partial class Pages_courses1 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-            if (Session["login"] == null)
-                Response.Redirect("login.aspx");
+        if (Session["login"] == null)   //判断是否登录
+            Response.Redirect("login.aspx");
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
