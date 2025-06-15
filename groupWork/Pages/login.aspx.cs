@@ -27,7 +27,7 @@ public partial class Pages_login : System.Web.UI.Page
                     cmd.Parameters.AddWithValue("@username", username.Text.Trim());
                     cmd.Parameters.AddWithValue("@password", password.Text.Trim());
 
-                    if (Convert.ToInt32( cmd.ExecuteScalar())==1)
+                    if (Convert.ToInt32( cmd.ExecuteScalar())>0)
                     {
 
                         HttpCookie cookie2 = new HttpCookie("mycookie2");

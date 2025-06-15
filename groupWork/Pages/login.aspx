@@ -367,35 +367,12 @@
 
 
             <div class="register-link">
-                <p>还没有账号？ <a href="#">立即注册</a></p>
+                <p>还没有账号？ <a href="registration.aspx">立即注册</a></p>
             </div>
         </div>
     </div>
 
     <script>
-        // 简单的表单验证
-        document.querySelector('form').addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            if (username.trim() === '') {
-                alert('请输入用户名');
-                return;
-            }
-
-
-        //    // 模拟登录过程
-        //    document.querySelector('.btn-login').textContent = '登录中...';
-
-        //    setTimeout(() => {
-        //        alert('登录成功！即将跳转到首页');
-        //        document.querySelector('.btn-login').textContent = '登录成功';
-        //        // 实际项目中这里会跳转到主页
-                
-        //    }, 1500);
-        //});
 
     </script>
         </form>
