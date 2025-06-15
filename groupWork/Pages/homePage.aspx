@@ -10,13 +10,17 @@
     <link href="../style/homePage.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
+    <form runat="server">
     <!-- 导航栏 -->
     <nav class="navbar">
         <a href="#" class="logo">太极之道</a>
         <div class="nav-links">
             <a href="courses.aspx">课程体系</a>
             <a href="#community">太极社区</a>
-            <a href="#profile">个人中心</a>
+            <a href="login.aspx">
+                <asp:Label ID="Label1" runat="server" Text="登录"></asp:Label></a>
+            <asp:Button ID="logOutBt" runat="server" Text="" Visible="False" OnClick="Button1_Click" />&nbsp;
+            <asp:Label ID="username" runat="server" Text=""></asp:Label>
         </div>
     </nav>
     <hr />
@@ -53,7 +57,7 @@
     </section>
 
     <!-- 学习进度 -->
-<%--    <section class="progress-section">
+        <%--    <section class="progress-section">
         <h2>您的太极精进之路</h2>
         <div class="progress-ring" style="color: #000000">65%</div>
         <p>已掌握15/24个标准动作</p>
@@ -65,5 +69,6 @@
     <footer>
         <p>© 2025 太极之道 传承中华传统文化</p>
     </footer>
+        </form>
 </body>
 </html>
