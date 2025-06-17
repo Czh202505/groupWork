@@ -13,13 +13,12 @@
     </div>
 
     <div style="text-align: center">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BorderStyle="None" GridLines="None" ShowHeader="False" Width="800px" CssClass="course-list" DataKeyNames="ID" Font-Size="X-Large" Font-Bold="True" RowStyle-CssClass="course-item">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1"  GridLines="None" ShowHeader="False" Width="700px" CssClass="course-list" DataKeyNames="ID" Font-Size="X-Large" Font-Bold="True" RowStyle-CssClass="course-item">
             <columns>
                 <asp:BoundField DataField="name" SortExpression="name" ItemStyle-CssClass="course-title" ItemStyle-VerticalAlign="Middle" ItemStyle-HorizontalAlign="Justify" HeaderText="name" ItemStyle-Height="50px">
-                    <itemstyle cssclass="course-title" horizontalalign="Justify" verticalalign="Middle" />
                 </asp:BoundField>
                 <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" Visible="False" />
-                <asp:TemplateField ShowHeader="False">
+                <asp:TemplateField ShowHeader="False" >
                     <itemtemplate>
                         <asp:Button ID="Button1" runat="server" CausesValidation="false" CommandName="Cancel" OnClick="Button1_Click" Text="开始学习" CssClass="btn-primary" />
                     </itemtemplate>
